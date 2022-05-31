@@ -1,0 +1,346 @@
+.full-banner{
+    width: 1400px;
+    margin: 0 auto;
+   margin-top: -21px;
+}
+.banner{
+    background-image: url(./image/ia_200000019.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    z-index: 1;
+}
+
+
+.banner-text{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.banner-text h1{
+    font-size: 90px;
+}
+.banner-text h2{
+    font-size: 34px;
+    margin-top: -50px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+.banner h2::after{
+    content: '';
+	background-color:#fff;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 29%;
+    width: 5%;
+    z-index: -1;
+}
+.banner h2::before{
+    content: '';
+	background-color:#fff;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 22px;
+	right: 29%;
+    width: 5%;
+    z-index: -1;
+}
+.b-btn a{
+    display: inline-block;
+    color: #fff;
+    padding: 13px 29px;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #c69351;
+    text-decoration: none;
+    font-size: 15px;
+    transition: .5s;
+}
+.b-btn a:hover{
+    background-color: #fff;
+    color: #c69351;
+}
+
+nav.header {
+    margin-top: -186px;
+    background-color: #1c2124;
+    opacity: .7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+.header-logo{
+    float: left;
+    width: 30%;
+}
+.header-menu{
+    float: right;
+    width: 70%;
+    text-align: center;
+    margin-right: -160px;
+}
+.header-menu ul{}
+.header-menu ul li{
+    display: inline-block;
+    line-height: 2;
+    position: relative;
+    
+}
+.header-menu ul li::after {
+    content: "";
+    position: absolute;
+    top: 143%;
+    left: 39%;
+    width: 0%;
+    height: 2px;
+    background: #c7944b;
+    transition: 0.5s;
+    transform: scale(0);
+   
+  } 
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ddd;
+    margin-left: 6px;
+}
+.header-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+    transition: 0.5s;
+    
+
+}
+.header-menu ul li:hover > a{
+    color: #c7944b;
+}
+.header-menu ul li:hover::after {
+    width: 50%;
+    transform: scale(2);
+}
+
+/* Dropdwon menu */
+.header-menu ul li{
+    position: relative;
+    
+}
+.header-menu ul li ul{
+    position: absolute;
+    left: -13px;
+    top: 173%;
+    width: 110px;
+    background-color: #fff;
+    transition: .5s;
+    
+}
+.header-menu ul li ul li{
+    display: block;
+}
+.header-menu ul li ul li a{
+    display: block;
+    margin-left: -40px;
+    padding: 10px 0;
+}
+.header-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    
+   
+
+    
+}
+.header-menu ul li ul li a:hover{
+    color: #c7944b;
+    background-color: #dddddd;
+}
+
+
+/* service section */
+.main{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+.service-section{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.service-item{
+    width: 16%;
+    float: left;
+    margin-left: 15%;
+    margin-top: 50px;
+    background-color: #ffffff;
+    margin-right: -188px;
+    padding-bottom: 47px;
+    transition: .5s;
+   
+}
+.service-item:hover{
+    background-color: #ddd;
+}
+
+.service-item:hover.service-item a{
+    background-color: #fff;
+    color: #c69351;
+}
+.service-item img{
+    transform: rotatey();
+    transition: .7s;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.service-item img:hover{
+    transform: rotatey(360deg);
+    background-color: #ffff;
+}
+.service-item h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.service-item p{
+    font-size: 15px;
+    margin-bottom: 25%;
+}
+.service-item a{
+    color: #fff;
+    padding: 13px 17px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #c69351;
+    text-decoration: none;
+    font-size: 15px; 
+    transition: .5s;   
+    transform: translateY();
+    display: inline-block;
+}
+.service-item a:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    transition: .5s;
+}
+.service-item a:hover{
+    transform: translateY(5px) !important;
+   
+}
+/* About Section */
+
+.about{
+    padding: 100px;
+}
+
+.about-video{
+    float: left;
+    margin-left: 50px;
+}
+.about-text{
+    float: right;
+    width: 42%;
+    margin-right: 49px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-text span{
+    color: #c69363;
+}
+.about-text a{
+    color: #fff;
+    padding: 13px 17px;
+    margin-left: 10px;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 43px;
+    display: inline-block;
+    margin-left: -5px;
+    transition: .5s;
+}
+.about-text a:hover{
+    background-color: #c69363;
+}
+.quote-text{
+    float: left;
+    margin-left: 242px;
+    width: 38%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.quote-text p{
+    margin-bottom: 40px;
+}
+.quote-image{
+    float: right;
+    width: 76%;
+    margin-top: -531px;
+}
+.quote-image img{
+    height: 600px;
+}
+.input-1{
+    width: 104%;
+    border: none;
+    padding: 12px 0;
+    text-indent: 20px;
+    margin: -5px;
+    
+}
+
+.input-2{
+    color: #fff;
+    padding: 13px 17px;
+    margin-left: 10px;
+    border: none;
+    background-color: #c69351;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+}
+        /* Footer section */
+.f-menu{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #6c6c6c;
+    padding: 50px 0;
+    margin-bottom: 40px;
+}
+.footer-text{
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ddd;
+}
+.footer-icon{
+    float: right;
+    width: 50%;
+   text-align: center;
+
+}
+.footer-icon li{
+    text-decoration: none;
+    display: inline-block;
+   
+}
+.footer-icon li a{
+    text-align: 20%;
+    margin-right: 20px;
+    color: #dddddd;
+}

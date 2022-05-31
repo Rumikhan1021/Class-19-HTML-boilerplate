@@ -1,0 +1,310 @@
+/* defualt  */
+:root{
+    --footer-bg:#6d6d6d;
+    --footer-color:#dddddd;
+    --main-bg:#f8f8f8;
+}
+
+main{
+    background:var(--main-bg);
+}
+p,summary {
+    color:#797777;
+}
+.container{
+    max-width: 1320px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.default-btn{
+    background: #c69453;
+  border: none;
+  color: #fff;
+  padding: .7rem 2rem;
+    cursor:pointer;
+}
+/* header -area start */
+header{
+    display:flex;
+    justify-content:space-around;
+    background:rgba(0, 0, 0, 0.234);
+}
+header .logo{
+    width: 30%;
+    position:relative;
+}
+header .logo a{
+    display:block;
+}
+header .logo a img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    position: relative;
+    margin-left: 3px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display:block;
+    padding: 1.5rem; 
+    position: relative
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 0.1rem;
+    background: #c69453;
+    transform: scaleX(0);
+    transition: all 0.4s;
+
+}
+nav ul li a:hover::after{
+    
+    transform: scaleX(1)
+}
+/* sub menu start */
+nav ul li ul li a::after{
+    width:0;
+  }
+  
+nav ul li:hover .submenu{
+    visibility: visible;                                  
+    opacity: 1;
+    transform:scaleY(1)
+}
+nav ul li .submenu li:hover > a{
+    background-color:rgba(0, 0, 0, 0.107);
+    color:#cc8426;
+}
+nav ul li .submenu{
+    position:absolute;
+    top:100%;
+    left:0;
+    width: 18.5rem;
+    background-color: #fff;
+    display:block;
+    visibility:hidden;
+    opacity:0;
+    transition:.5s;
+    transform:scaleY(0);
+    padding:0;
+}
+nav ul li .submenu li{
+    list-style: none;
+    display: block;
+}
+nav ul li .submenu li a{
+    color: #000;
+    text-decoration: none;
+    display:block;
+}
+/* sub menu end */
+/* header -area end */
+.hero-bg{
+    background:rgba(0, 0, 0, 0.5) url(./image/ia_200000019.jpg) no-repeat center center;
+    background-size:cover;
+    text-align:center;
+    height: 90vh;
+    background-blend-mode: darken;
+}
+.hero-content{
+    padding-top:6rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-content h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+.hero-content button{
+    border-radius:2rem;
+    transition: all 0.3s;
+}
+.hero-content button:hover{
+    background:#fff;
+    color: #cc8426;
+}
+
+.sub-title h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: -29px;
+}
+.sub-title .left-span{
+    margin-right:2rem;
+}
+.sub-title span{
+    display: inline-block;
+    background: #fff;
+    height:.1rem;
+    width:5rem;
+    margin-left: 1rem;
+    position: relative;
+    margin-bottom: 5px;
+}
+/* card area start */
+.card-area{
+    padding-top: 4rem;
+    display: flex;
+    justify-content:space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+  width: 22%;
+  background: #fff;
+  padding: 1.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: all .5s;
+}
+
+.card:hover .card-logo a img {
+  transform:rotateY(360deg)  
+}
+.card:hover{
+    background: rgba(30, 29, 29, 0.062);
+}
+.card-logo a img{
+    display:inline-block;
+    transition: all 0.5s;
+}
+
+.card:hover .card-content button{
+    background:#fff;
+    color:#cc8426;
+}
+.card-content button {
+  border-radius: 5px;
+    transition: all 0.4s;
+    margin-top: 1rem;
+    transform:translateY(0)
+}
+.card-content button:hover {
+    background:rgb(26, 25, 25)!important;
+    color: #fff!important;
+    transform:translateY(7px);
+}
+/* card area end */
+/* about-section start*/
+.about-wrapper{
+    display:flex;
+    justify-content:space-around;
+    padding:6rem 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+summary{
+    cursor:pointer;
+}
+.about-content h3{
+    font-size:3rem;
+}
+.about-content h3 span{
+    color:#c69453;
+}
+.about-section{}
+aside{
+width: 40%;
+}
+aside video{
+}
+.about-content button{
+    background:#000;
+    margin-top:20px;
+    transition: all 0.3s;
+}
+.about-content button:hover{
+    background: #fff;
+    color: #cc8426;
+}
+.contact-bg{
+    background:url(./image/ia_200000022.jpg) no-repeat center center;
+    background-size:cover;
+    padding: 276px 0;
+}
+.form {
+  width: 40%;
+  margin-left: 15%;
+  box-sizing: border-box;
+  padding-bottom:3rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-area h3{
+    font-size:2.3rem;
+    font-weight: bold;
+}
+
+.input-1{
+    width: 32%;
+    border: none;
+    padding: 12px 0;
+    text-indent: 20px;
+    margin: -4px;
+    margin-left: 20%;
+    
+}
+
+.input-2{
+    color: #fff;
+    padding: 13px 17px;
+    margin-left: 20%;
+    border: none;
+    background-color: #c69351;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+}
+.contact-img{
+    width:40% ;
+}
+.contact-img img {
+  width: 50%;
+  height: 50rem;
+}
+/* -- contact--section end -- */
+/* footer area start */
+footer{
+    background:var(--footer-bg);
+    color:var(--footer-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content p{
+    color: #fff;
+}
+.footer-logo ul li{
+    display: inline-block;
+    margin-left:4px;
+}
+.footer-logo ul li a i{
+    color:var(--footer-color);
+    font-size: 10px;
+}
+.footer-logo ul li a::after{
+    opacity:0;
+}
+/* footer area end */
